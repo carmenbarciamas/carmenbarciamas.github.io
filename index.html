@@ -1,6 +1,18 @@
 <html>
-  <head><title>My Website</title></head>
-<body style="background-color: black; color: pink;">
+  <head><title>My Website</title>
+  <meta charset="UTF-8">
+  <title>Password Protected</title>
+  <script>
+    function checkPassword() {
+      var password = prompt("Enter the password:");
+      if (password !== "mypassword") {
+        alert("Incorrect password! You cannot enter.");
+        window.location.href = "https://example.com"; // redirect elsewhere
+      }
+    }
+  </script>
+  </head>
+<body style="background-color: black; color: pink;" onload="checkPassword()" >
     <h1>INVITATION </h1>
     <p> <b></b></p>
 
